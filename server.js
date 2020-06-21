@@ -28,7 +28,7 @@ app.get("/productListings",(req,res)=>{
 
 const PORT = 3000;
 
-app.listen(port, () => {
+app.listen(PORT, () => {
      
     console.log('up n running');
        
