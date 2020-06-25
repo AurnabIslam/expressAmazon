@@ -1,21 +1,21 @@
 
+<h2> product listing page</h2>
 
 
-<div class="objlit">
+
+<div class="container">
+
+{{#each data}}
+
+<div class="">
 
 
-    {{#each data}}
-
-    <div>
-         TItle : {{this.title}}
-         Description: {{this.description}}
-         Price: {{this.price}}  
-         <img src = "/public/img/{{thisimgPath}}">
-    </div>
-
-
-    {{/each}} 
-
-
+    Title : {{this.title}}
+    Description: {{this.description}}
+    price: {{this.price}}
+    <img src="/img/{{this.imgPath}}">
+</div>
 
 </div>
+
+

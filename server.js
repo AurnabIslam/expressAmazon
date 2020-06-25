@@ -20,10 +20,10 @@ app.get("/",(req,res)=>{
 
 });
  
-app.get("/productListings",(req,res)=>{
+app.get("/productListing",(req,res)=>{
     res.render("index",{
         title : "product listing page",
-        data  : product.getAllProducts()
+        data : product.getAllProducts()
     })
 
 });
@@ -33,6 +33,6 @@ const PORT = 3000;
 
 app.listen(PORT, () => {
      
-    console.log('up n running');
+    console.log(`up n running`);
        
 })
